@@ -1,3 +1,9 @@
+/**
+ * @package uk.co.rossanthony.noiselogger
+ * @class   AlarmReceiver
+ * @author  Ross Anthony
+ * @version 1.0
+ */
 package uk.co.rossanthony.noiselogger;
 
 import android.content.BroadcastReceiver;

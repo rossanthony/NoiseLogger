@@ -1,3 +1,9 @@
+/**
+ * @package uk.co.rossanthony.noiselogger
+ * @class   DisplayToast
+ * @author  Ross Anthony
+ * @version 1.0
+ */
 package uk.co.rossanthony.noiselogger;
 
 import android.widget.Toast;

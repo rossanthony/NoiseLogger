@@ -1,3 +1,9 @@
+/**
+ * @package uk.co.rossanthony.noiselogger
+ * @class   MainActivity
+ * @author  Ross Anthony
+ * @version 1.0
+ */
 package uk.co.rossanthony.noiselogger;
 
 import android.support.v7.app.ActionBarActivity;
@@ -14,7 +20,6 @@ import android.content.Context;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
-
 
 public class MainActivity extends ActionBarActivity implements OnCheckedChangeListener {
 

@@ -1,3 +1,9 @@
+/**
+ * @package uk.co.rossanthony.noiselogger
+ * @class   RecorderService
+ * @author  Ross Anthony
+ * @version 1.0
+ */
 package uk.co.rossanthony.noiselogger;
 
 import android.content.Context;
@@ -20,9 +26,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-
-
-
 public class RecorderService extends IntentService {
 
     private MediaRecorder recorder = null;
@@ -30,19 +33,23 @@ public class RecorderService extends IntentService {
     private LocationManager lm;
     private Handler mHandler;
     private int amp;
-    private TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
 
+    /**
+     * Runs on init, setup handler for Displaying Toast messages to main thread
+     */
     public RecorderService() {
         super("RecorderService");
         mHandler = new Handler();
-        IMEI = telephonyManager.getDeviceId();
     }
 
     @Override
     protected void onHandleIntent(Intent intent) {
 
         if(checkCon()) {
-            Log.i("RecorderService", "RecorderService is running...");
+            Log.i("RecorderService", "RecorderService is running");
+
+            TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+            IMEI = telephonyManager.getDeviceId();
 
             // Start recording audio
             startRecording();
@@ -58,14 +65,14 @@ public class RecorderService extends IntentService {
             amp = recorder.getMaxAmplitude();
             Log.i("getMaxAmplitude", "amp: " + amp);
 
-            // Stop recording sound, to save resources
-            stopRecording();
-
             // Display popup message in the app UI as notification of last sound sample taken
             mHandler.post(new DisplayToast(this, "Last Max Amplitude: " + amp));
 
             // Send the sample data to the API
             sendDataToApi(amp);
+
+            // Stop recording sound, to save resources
+            stopRecording();
         }
     }
 
@@ -98,9 +105,9 @@ public class RecorderService extends IntentService {
      * @param amp
      */
     private void sendDataToApi(int amp) {
-
+        String locationParams = getLocation();
         String postParams = "api_key=8DOZPI1LTOFZ0PSZ&field1=" + amp
-                            + getLocation()
+                            + locationParams
                             + "&field4=" + IMEI;
 
         Log.i("postParameters", postParams);
@@ -145,10 +152,12 @@ public class RecorderService extends IntentService {
         {
             double lng = l.getLongitude();
             double lat = l.getLatitude();
+            Log.i("postParameters", "&field2=" + lat + "&field3=" + lng);
             return "&field2=" + lat + "&field3=" + lng;
         }
         else
         {
+            Log.i("location", "null!!");
             return "";
         }
     }
@@ -161,7 +170,7 @@ public class RecorderService extends IntentService {
     private boolean checkCon() {
         ConnectivityManager conMgr =  (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
 
-        if ( conMgr.getNetworkInfo(0).getState() == NetworkInfo.State.DISCONNECTED
+        if(conMgr.getNetworkInfo(0).getState() == NetworkInfo.State.DISCONNECTED
                 &&  conMgr.getNetworkInfo(1).getState() == NetworkInfo.State.DISCONNECTED) {
             return false;
         }

@@ -1,0 +1,29 @@
+04-19 23:55:20.523    7087-7087/uk.co.rossanthony.noiselogger I/System.out﹕ debugger has settled (1368)
+04-19 23:55:20.851    7087-7132/uk.co.rossanthony.noiselogger D/OpenGLRenderer﹕ Render dirty regions requested: true
+04-19 23:55:20.858    7087-7087/uk.co.rossanthony.noiselogger D/Atlas﹕ Validating map...
+04-19 23:55:20.904    7087-7132/uk.co.rossanthony.noiselogger I/Adreno-EGL﹕ <qeglDrvAPI_eglInitialize:410>: QUALCOMM Build: 10/28/14, c33033c, Ia6306ec328
+04-19 23:55:20.905    7087-7132/uk.co.rossanthony.noiselogger I/OpenGLRenderer﹕ Initialized EGL, version 1.4
+04-19 23:55:20.931    7087-7132/uk.co.rossanthony.noiselogger D/OpenGLRenderer﹕ Enabling debug mode 0
+04-19 23:55:39.272    7087-7132/uk.co.rossanthony.noiselogger V/RenderScript﹕ Application requested CPU execution
+04-19 23:55:39.279    7087-7132/uk.co.rossanthony.noiselogger V/RenderScript﹕ 0xb75be738 Launching thread(s), CPUs 4
+04-19 23:55:45.327    7087-7097/uk.co.rossanthony.noiselogger I/art﹕ Ignoring second debugger -- accepting and dropping
+04-19 23:55:45.396    7087-7183/uk.co.rossanthony.noiselogger I/RecorderService﹕ RecorderService is running
+04-19 23:55:46.447    7087-7183/uk.co.rossanthony.noiselogger I/getMaxAmplitude﹕ amp: 5244
+04-19 23:55:46.537    7087-7183/uk.co.rossanthony.noiselogger I/postParameters﹕ api_key=8DOZPI1LTOFZ0PSZ&field1=5244&field4=353918050740642
+04-19 23:55:47.498    7087-7183/uk.co.rossanthony.noiselogger I/openConnection﹕ Response: 200
+04-19 23:56:01.951    7087-7251/uk.co.rossanthony.noiselogger I/RecorderService﹕ RecorderService is running
+04-19 23:56:02.990    7087-7251/uk.co.rossanthony.noiselogger I/getMaxAmplitude﹕ amp: 3594
+04-19 23:56:03.011    7087-7251/uk.co.rossanthony.noiselogger I/postParameters﹕ api_key=8DOZPI1LTOFZ0PSZ&field1=3594&field4=353918050740642
+04-19 23:56:03.266    7087-7251/uk.co.rossanthony.noiselogger I/openConnection﹕ Response: 200
+04-19 23:56:09.254    7087-7298/uk.co.rossanthony.noiselogger I/RecorderService﹕ RecorderService is running
+04-19 23:56:10.303    7087-7298/uk.co.rossanthony.noiselogger I/getMaxAmplitude﹕ amp: 15179
+04-19 23:56:10.324    7087-7298/uk.co.rossanthony.noiselogger I/postParameters﹕ api_key=8DOZPI1LTOFZ0PSZ&field1=15179&field4=353918050740642
+04-19 23:56:10.538    7087-7298/uk.co.rossanthony.noiselogger I/openConnection﹕ Response: 200
+04-19 23:56:24.281    7087-7336/uk.co.rossanthony.noiselogger I/RecorderService﹕ RecorderService is running
+04-19 23:56:25.316    7087-7336/uk.co.rossanthony.noiselogger I/getMaxAmplitude﹕ amp: 3594
+04-19 23:56:25.339    7087-7336/uk.co.rossanthony.noiselogger I/postParameters﹕ api_key=8DOZPI1LTOFZ0PSZ&field1=3594&field4=353918050740642
+04-19 23:56:25.591    7087-7336/uk.co.rossanthony.noiselogger I/openConnection﹕ Response: 200
+04-19 23:56:45.546    7087-7382/uk.co.rossanthony.noiselogger I/RecorderService﹕ RecorderService is running
+04-19 23:56:46.606    7087-7382/uk.co.rossanthony.noiselogger I/getMaxAmplitude﹕ amp: 4990
+04-19 23:56:46.633    7087-7382/uk.co.rossanthony.noiselogger I/postParameters﹕ api_key=8DOZPI1LTOFZ0PSZ&field1=4990&field4=353918050740642
+04-19 23:56:46.806    7087-7382/uk.co.rossanthony.noiselogger I/openConnection﹕ Response: 200
