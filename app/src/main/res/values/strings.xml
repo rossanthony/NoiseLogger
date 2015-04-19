@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NoiseLogger</string>
+    <string name="welcome_msg">Noise logging app - takes a 1 second sound sample every 15 seconds and sends the max amplitude to the cloud along with lat/long coordinates.</string>
+    <string name="action_settings">Settings</string>
+    <string name="switch_label">Noise logging: </string>
+    <string name="switch_text_on">On</string>
+    <string name="switch_text_off">Off</string>
+</resources>
