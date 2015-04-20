@@ -13,6 +13,10 @@ All source files for the build are included, as well as debug and release .apk f
 
 NOTE: upon initial boot of the App the sound logger is not enabled, it can be enabled via the switch on the main app screen. This then triggers a background service to run via an Alarm Manager at an interval of 15 seconds.
 
-##Licence
+## Declaration
 
-[CC0 1.0 Universal](LICENSE) I hearby confirm that all code within app/src/main/java is my own code except where otherwise credited in the comments above certain methods, where I have reused snippets of code provided in tutorials or forums online.
+I hearby confirm that all code within /app/src/main/java is my own code except where otherwise credited in the comments above certain methods, where I have reused snippets of code provided in tutorials or forums online.
+
+## Licence
+
+See the [LICENSE](LICENSE.txt) file for license rights and limitations (MIT).
